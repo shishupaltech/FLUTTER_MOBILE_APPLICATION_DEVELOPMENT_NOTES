@@ -1,0 +1,30 @@
+🔹 FINAL MASTER CLASSIFICATION TABLE 🔥
+
+
+🔹 A. DATA TYPES (REAL TYPES)
+
+    | Word      | Category                   |
+    | --------- | -------------------------- |
+    | `int`     | Data type                  |
+    | `double`  | Data type                  |
+    | `String`  | Data type                  |
+    | `bool`    | Data type                  |
+    | `num`     | Special numeric data type  |
+    | `BigInt`  | Special integer data type  |
+    | `dynamic` | Special flexible data type |
+
+🔹 B. TYPE INFERENCE KEYWORD
+    | Word  | Category | Purpose                  |
+    | ----- | -------- | ------------------------ |
+    | `var` | Keyword  | Let Dart decide the type |
+
+🔹 C. IMMUTABILITY / ASSIGNMENT KEYWORDS
+    | Word    | Category | Purpose               |
+    | ------- | -------- | --------------------- |
+    | `final` | Keyword  | Assign once           |
+    | `const` | Keyword  | Compile-time constant |
+    
+🔹 D. INITIALIZATION CONTROL
+    | Word   | Category | Purpose          |
+    | ------ | -------- | ---------------- |
+    | `late` | Keyword  | Initialize later |
