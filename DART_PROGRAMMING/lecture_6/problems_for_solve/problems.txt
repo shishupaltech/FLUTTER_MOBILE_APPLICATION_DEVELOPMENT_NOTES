@@ -1,0 +1,155 @@
+Loops & Iteration – Practice Questions
+
+🔹 Question 1: Print Numbers from 1 to 100
+
+    Write a program that:
+
+        Uses a loop.
+
+        Prints numbers from 1 to 100.
+
+        Prints each number on a new line.
+
+        📌 Hint: Use a for loop.
+
+🔹 Question 2: Print Even Numbers Between 1 and 50
+
+    Write a program that:
+
+        Uses a loop.
+
+        Prints all even numbers between 1 and 50.
+
+        Uses a condition inside the loop.
+
+        📌 Hint: Use % operator.
+
+🔹 Question 3: Sum of First 10 Numbers
+
+    Write a program that:
+
+        Uses a loop.
+
+        Calculates the sum of first 10 natural numbers.
+
+        Prints the final sum.
+
+        📌 Expected Output:
+        Sum = 55
+
+🔹 Question 4: Reverse a Number Using Loop
+
+    Write a program that:
+
+        Takes an integer number from the user.
+
+        Uses a loop.
+
+        Reverses the given number.
+
+        Prints the reversed number.
+
+        📌 Example:
+        Input: 1234
+        Output: 4321
+
+🔹 Question 5: Count Digits in a Number
+
+    Write a program that:
+
+        Takes an integer number from the user.
+
+        Uses a loop.
+
+        Counts the total number of digits.
+
+        Prints the digit count.
+
+        📌 Example:
+        Input: 5089
+        Output: 4
+
+🔹 Question 6: Check Prime Number
+
+    Write a program that:
+
+        Takes a number from the user.
+
+        Uses a loop.
+
+        Checks whether the number is Prime or Not Prime.
+
+        Prints the result.
+
+        📌 Note:
+        A prime number has exactly two factors.
+
+🔹 Question 7: Pattern Pyramid
+
+    Write a program that:
+
+        Uses nested loops.
+
+        Prints the following pyramid pattern:
+
+        *
+        * *
+        * * *
+        * * * *
+
+
+    📌 Hint:
+    Outer loop → rows
+    Inner loop → stars
+
+🔹 Question 8: Fibonacci Series Using Loop
+
+    Write a program that:
+
+        Takes a number n from the user.
+
+        Uses a loop.
+
+        Prints the Fibonacci series up to n terms.
+
+        📌 Example:
+        Input: 5
+        Output: 0 1 1 2 3
+
+🔹 Question 9: Menu-Driven Program Using do-while
+
+    Write a program that:
+
+    Uses a do-while loop.
+
+    Displays the following menu repeatedly:
+
+    1. Add two numbers
+    2. Subtract two numbers
+    3. Multiply two numbers
+    4. Exit
+
+
+    Takes user choice.
+
+    Performs the selected operation.
+
+    Continues until the user selects Exit.
+
+    📌 Important:
+    Use switch inside do-while.
+
+🔹 Question 10: Infinite Loop with Exit Condition
+
+    Write a program that:
+
+        Uses an infinite loop.
+
+        Keeps asking the user to enter a number.
+
+        Stops the loop when the user enters 0.
+
+        Prints "Program Terminated" before exiting.
+
+        📌 Hint:
+        Use break statement.

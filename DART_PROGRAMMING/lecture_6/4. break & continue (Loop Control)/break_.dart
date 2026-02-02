@@ -1,0 +1,1 @@
+// break → Exit loop immediately

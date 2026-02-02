@@ -1,0 +1,182 @@
+🔹 Dart Null Safety & Null Assertion Operators – Complete Table
+🔹 1. Nullable Type ?
+        Item	                Explanation
+        Symbol	                    ?
+        Name	                Nullable Type
+        Meaning	                Variable can contain null
+        Why needed	            To tell compiler value may be absent
+    Example
+    String? name;        // may be null
+    int? age;
+    Usage rule
+    print(name);        // allowed
+    print(name.length); // ❌ error (might be null)
+
+🔹 2. Null Assertion Operator !
+        Item	                    Explanation
+        Symbol	                    !
+        Name	                    Null Assertion Operator
+        Meaning	                    “I guarantee this is NOT null”
+        Risk	                    Runtime crash if value is null
+        Use when	                After null-check or when framework guarantees value
+    
+    Safe Example
+    String? name = "Amit";
+
+    if (name != null) {
+    print(name!.length);   // safe
+    }
+
+    Dangerous Example
+    String? name;
+    print(name!.length);   // ❌ crash at runtime
+
+🔹 3. Null-safe Access Operator ?.
+        Item	                    Explanation
+        Symbol	                    ?.
+        Name	                    Null-aware access
+        Meaning	                    Access only if object is not null
+        Result	                    Returns null instead of crashing
+        Best for	                Objects, chains, Flutter models
+    Example
+    String? text;
+    print(text?.length);   // null (no crash)
+
+    Chain Example
+    user?.profile?.name
+    class User {
+        Profile? profile;
+    }
+
+    class Profile {
+        String? name;
+    }
+
+    void main() {
+    // CASE 1: user is null
+    User? user1;
+    print("Case 1: ${user1?.profile?.name}");
+
+    // CASE 2: user exists, profile is null
+    User? user2 = User();
+    print("Case 2: ${user2?.profile?.name}");
+
+    // CASE 3: user and profile both exist
+    User? user3 = User();
+    user3.profile = Profile();
+    user3.profile!.name = "Rahul";
+
+    print("Case 3: ${user3?.profile?.name}");
+    }
+
+
+🔹 4. Null Coalescing Operator ??
+        Item	                    Explanation
+        Symbol	                    ??
+        Name	                    Null Coalescing
+        Meaning	                    Provide default value if left side is null
+        Use for	                    UI defaults, safe values
+    Example
+    String? name;
+
+    String finalName = name ?? "Guest";
+    print(finalName);   // Guest
+
+    UI Example
+    Text(name ?? "No Name")
+
+🔹 5. Null-aware Assignment ??=
+        Item	                    Explanation
+        Symbol	                    ??=
+        Name	                    Null-aware assignment
+        Meaning	                    Assign only if variable is null
+        Use for	                    Lazy initialization
+    Example 1 (null case)
+    String? city;
+    city ??= "Delhi";
+    print(city);   // Delhi
+
+    Example 2 (already has value)
+    city = "Mumbai";
+    city ??= "Delhi";
+    print(city);   // Mumbai (not changed)
+
+🔹 6. required Keyword (Constructor / Parameters)
+        Item	                Explanation
+        Keyword	                required
+        Meaning	                Value must be provided, cannot be null
+        Use for	                Constructors, function parameters
+        Benefit	                Avoids null bugs at creation time
+    Example
+    class Person {
+    String name;
+    int age;
+
+    Person({required this.name, required this.age});
+    }
+
+
+    Usage:
+
+    Person p = Person(name: "Amit", age: 20);   // ✅
+    Person p = Person(name: "Amit");            // ❌ error
+
+🔹 7. Most Used Combined Patterns (Industry Style)
+        Pattern 1: Safe length with default
+        String? name;
+
+        print(name?.length ?? 0);
+
+        Step	            Result
+        name null	        name?.length → null
+        ?? 0	            final result → 0
+        Pattern 2: Check then assert
+        if (user != null) {
+        print(user!.id);
+        }
+
+
+    Safe because:
+
+    First check
+
+    Then assert
+
+    Pattern 3: Default initialization once
+    int? count;
+    count ??= 0;
+    count++;
+
+    Pattern 4: Function safe parameter
+    void show(String? msg) {
+    print(msg ?? "No message");
+    }
+
+🔹 9. Quick Comparison Table (Very Useful for Teaching)
+Symbol	Name	Safe?	Purpose
+?	Nullable type	✅	Allow null
+!	Null assertion	❌ risky	Force non-null
+?.	Safe access	✅	Avoid crash
+??	Default value	✅	Backup if null
+??=	Assign if null	✅	Lazy init
+late	Late init	⚠️ risky	Init later
+required	Mandatory value	✅	Prevent null
+🔹 10. Golden Rules (Tell Students Clearly)
+
+You can teach this as rules of null safety:
+
+Rule 1
+
+Prefer ?. and ?? over !
+
+Rule 2
+
+Use ! only after checking or when 100% sure
+
+Rule 3
+
+More ! = more crashes 💥
+
+Rule 4
+
+Null safety is compiler protection, not magic

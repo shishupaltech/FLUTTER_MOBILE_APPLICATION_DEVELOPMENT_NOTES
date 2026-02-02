@@ -1,0 +1,9 @@
+🔹 In real life, we take decisions:
+
+    If it rains → take umbrella
+
+    If marks ≥ 35 → pass
+
+    If password correct → login
+
+ In programming, we use conditional statements to make such decisions.

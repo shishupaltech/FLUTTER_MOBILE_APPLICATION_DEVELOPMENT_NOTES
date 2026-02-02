@@ -1,0 +1,41 @@
+*** Goal ***************************************
+
+  Repeat tasks efficiently without writing the same code again and again
+
+    🔹 1. Why Loops Are Needed (VERY IMPORTANT CONCEPT)
+    `````````````````````Without Loop (Bad Practice)```````````````````````````````
+    printf("Hello\n");
+    printf("Hello\n");
+    printf("Hello\n");
+    printf("Hello\n");
+    printf("Hello\n");
+
+
+*************Problems**************************
+
+    Too much code
+
+    Not scalable
+
+    Not professional
+
+    Not used in companies
+
+*********************With Loop ****************
+    for(int i = 1; i <= 5; i++) {
+        printf("Hello\n");
+    }
+
+***************Benefits***********************
+
+    Clean code
+
+    Easy to modify
+
+    Industry standard
+
+    Less bugs
+
+    *********Rule*********************************
+
+    “If something repeats → THINK LOOP”

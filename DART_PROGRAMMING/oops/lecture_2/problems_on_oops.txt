@@ -1,0 +1,118 @@
+🔹 Example 1: Declaring Student Class Object In Dart
+    // In this example below, there is a class Student with two properties: name and marks.
+    // The class has three methods.
+    // The first method setMarks stores the marks of the student.
+    // The second method calculateResult calculates the result and calls another method.
+    // The third method displayResult prints whether the student is PASS or FAIL based on marks.
+    // The calculateResult method must call the displayResult method.
+    // We also have an object of the class Student called student.
+    class Student{
+        String? name;
+        double? marks;
+        void setMarks(double newMarks){
+            marks = newMarks;
+        }
+        void displayResult(String result){
+            print(result);
+
+        }
+        void calculateResult(){
+            if(marks >= 75){
+                displayResult("${name} is Passed");
+                
+            }else{
+                displayResult("${name} is Failed");
+            }
+        }
+    }
+    void main(){
+        Student student1 = new Student();
+        student1.name = "Arun";
+        student1.setMarks(75.9);
+        student.
+    }
+
+🔹 Example 2: Declaring BankAccount Class Object In Dart
+    // In this example below, there is a class BankAccount with one property: balance.
+    // The class has three methods.
+    // The deposit method adds money to the balance.
+    // The withdraw method subtracts money from the balance.
+    // The showBalance method prints the current balance.
+    // Both deposit and withdraw methods must call the showBalance method.
+    // We also have an object of the class BankAccount called account.
+
+    class BankAccount{
+        
+    }
+🔹 Example 3: Declaring Mobile Class Object In Dart
+    // In this example below, there is a class Mobile with one property: batteryLevel.
+    // The class has three methods.
+    // The usePhone method reduces the battery based on usage time.
+    // The checkBattery method calls another method to check battery status.
+    // The batteryStatus method prints the current battery percentage.
+    // The data must flow from usePhone to checkBattery to batteryStatus.
+    // We also have an object of the class Mobile called mobile.
+
+🔹 Example 4: Declaring Calculator Class Object In Dart
+    // In this example below, there is a class Calculator with two properties: a and b.
+    // The class has three methods.
+    // The setValues method assigns values to a and b.
+    // The add method calculates the sum of a and b and sends the result to another method.
+    // The showResult method prints the final result.
+    // The add method must not print the result directly.
+    // We also have an object of the class Calculator called calculator.
+
+🔹 Example 5: Declaring Car Speed Control Class Object In Dart
+    // In this example below, there is a class Car with one property: speed.
+    // The class has four methods.
+    // The accelerate method increases the speed.
+    // The brake method decreases the speed.
+    // The checkSpeed method checks the current speed.
+    // The displaySpeed method prints the speed.
+    // Both accelerate and brake methods must call the checkSpeed method.
+    // We also have an object of the class Car called car.
+
+🔹 Example 6: Declaring Employee Class Object In Dart
+    // In this example below, there is a class Employee with one property: salary.
+    // The class has three methods.
+    // The setSalary method stores the salary.
+    // The calculateBonus method calculates the bonus and final salary.
+    // The printSalary method prints the final salary.
+    // The calculateBonus method must pass the calculated value to printSalary.
+    // We also have an object of the class Employee called employee.
+
+🔹 Example 7: Declaring Camera Photo System Class Object In Dart
+    // In this example below, there is a class Camera with one property: photosTaken.
+    // The class has three methods.
+    // The clickPhoto method increases the photo count.
+    // The processPhoto method processes the photo.
+    // The savePhoto method prints the number of saved photos.
+    // The method call flow must be clickPhoto to processPhoto to savePhoto.
+    // We also have an object of the class Camera called camera.
+
+🔹 Example 8: Declaring Attendance Class Object In Dart
+    // In this example below, there is a class Attendance with one property: daysPresent.
+    // The class has three methods.
+    // The markPresent method stores the number of days present.
+    // The calculatePercentage method calculates attendance percentage.
+    // The displayAttendance method prints the attendance percentage.
+    // The data must pass through at least two methods.
+    // We also have an object of the class Attendance called attendance.
+
+🔹 Example 9: Declaring Shopping Cart Class Object In Dart
+    // In this example below, there is a class Cart with one property: totalPrice.
+    // The class has three methods.
+    // The addItem method adds item price to total.
+    // The calculateTax method adds tax to the total amount.
+    // The finalBill method prints the final bill amount.
+    // The addItem method must call the calculateTax method.
+    // We also have an object of the class Cart called cart.
+
+🔹 Example 10: Declaring Exam Evaluation Class Object In Dart
+    // In this example below, there is a class Exam with two properties: theoryMarks and practicalMarks.
+    // The class has three methods.
+    // The setMarks method stores theory and practical marks.
+    // The calculateTotal method calculates total marks and calls another method.
+    // The calculateGrade method prints the grade based on total marks.
+    // Printing must be done only inside the final method.
+    // We also have an object of the class Exam called exam.

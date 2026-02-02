@@ -1,0 +1,147 @@
+🔹 Question 1: Positive, Negative or Zero?
+
+    Write a program that:
+
+        Takes one integer from the user.
+
+        Uses if – else if – else.
+
+        Prints whether the number is:
+
+        Positive
+
+        Negative
+
+        Zero
+
+🔹 Question 2: Voting Eligibility
+  
+    Write a program that:
+
+        Takes age from the user.
+
+        Uses if – else.
+
+        Prints:
+
+        "Eligible to Vote" if age is 18 or above
+
+        "Not Eligible" otherwise
+
+🔹 Question 3: Largest of Two Numbers
+
+    Write a program that:
+
+        Takes two numbers from the user.
+
+        Uses if – else.
+
+        Prints the larger number.
+
+🔹 Question 4: Even or Odd Checker
+
+    Write a program that:
+
+        Takes one integer from the user.
+
+        Uses if – else.
+
+        Prints whether the number is:
+
+        Even
+
+        Odd
+
+🔹 Question 5: Grading System (else-if ladder)
+
+    Write a program that:
+
+        Takes marks from the user.
+
+        Uses else if ladder.
+
+        Prints grade based on rules:
+
+        ≥ 90 → Grade A
+
+        ≥ 75 → Grade B
+
+        ≥ 60 → Grade C
+
+        Otherwise → Fail
+
+🔹 Question 6: Login Verification (Nested if)
+
+    Write a program that:
+
+        Takes user id and password from the user.
+
+        Uses nested if.
+
+        Prints:
+
+        "Login Successful" if both are correct
+
+        "Wrong Password" if id is correct but password is wrong
+
+        "Invalid User" if id is wrong
+
+🔹 Question 7: Simple Calculator (switch)
+
+    Write a program that:
+
+        Takes two numbers from the user.
+
+        Takes one operator (+ , - , * , /) from the user.
+
+        Uses switch statement.
+
+        Performs and prints the correct operation.
+
+🔹 Question 8: Day Name Finder (switch + default)
+
+    Write a program that:
+
+        Takes a number (1 to 7) from the user.
+
+        Uses switch.
+
+        Prints the corresponding day name.
+
+        Uses default to print "Invalid Day" for wrong input.    
+
+🔹 Question 9: Pass with Distinction
+
+    Write a program that:
+
+        Takes marks from the user.
+
+        Uses if – else if – else.
+
+        Prints:
+
+        "Distinction" if marks ≥ 75
+
+        "Pass" if marks ≥ 35
+
+        "Fail" otherwise
+
+🔹 Question 10: Menu Driven Program (switch + break)
+
+    Write a program that:
+
+        Displays a menu:
+
+        Check Even or Odd
+
+        Check Positive or Negative
+
+        Find Square of a Number
+
+        Takes user choice.
+
+        Uses switch with break.
+
+        Performs the selected operation.
+
+        Uses default for invalid choice.
