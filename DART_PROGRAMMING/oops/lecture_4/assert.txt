@@ -1,0 +1,12 @@
+Definition
+    Assert is used to check for programming mistakes by testing conditions during development.
+    or
+    Assert checks whether a condition is true. If not, it throws an error.
+    Syntax
+        assert(condition, "Error message");
+
+        Structure:
+        assert(
+            condition_that_must_be_true,
+            "Message shown if false"
+        );

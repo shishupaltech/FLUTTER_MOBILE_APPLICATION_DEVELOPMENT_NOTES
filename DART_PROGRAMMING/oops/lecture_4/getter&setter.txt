@@ -1,0 +1,64 @@
+
+Getter
+    Getter is used to read or access the value of a private variable safely.
+    OR
+    Getter returns the value of a variable without allowing direct access to it.
+
+    In simple words:
+
+        Getter = Read data safely
+
+        Syntax
+            datatype get variableName => value;
+
+        Structure:
+            datatype get propertyName {
+                return variable;
+            }
+
+        Example
+            int get id => _id;
+
+
+        Access it like a variable:
+
+            print(emp.id);
+
+
+No parentheses () because it is NOT a method.
+
+Setter
+    Setter is used to update or modify the value of a private variable with validation.
+    OR
+    Setter controls how a variable is changed to prevent invalid data.
+    In simple words:
+
+        Setter = Write data safely
+
+        Syntax
+            set variableName(datatype value) {
+                // validation
+                variable = value;
+            }
+
+            Structure:
+            set propertyName(datatype newValue) {
+                if(condition){
+                    variable = newValue;
+                }
+            }
+
+        ✅ Example
+            set id(int value) {
+                if(value > 0){
+                    _id = value;
+                }
+            }
+
+
+        Use it like normal assignment:
+
+        emp.id = 10;
+
+
+No parentheses here either.
